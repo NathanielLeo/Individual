@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nguyễn Tiến Hoàng Long - Full-Stack Developer</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header" id="header">
+      <div class="container">
+        <div class="nav-wrapper">
+          <div class="logo">
+            <span>&lt;Dev / Leo&gt;</span>
+          </div>
+
+          <nav class="nav" id="nav">
+            <ul class="nav-list">
+              <li>
+                <a href="#about" data-translate="nav.about">Giới thiệu</a>
+              </li>
+              <li><a href="#skills" data-translate="nav.skills">Kỹ năng</a></li>
+              <li>
+                <a href="#projects" data-translate="nav.projects">Dự án</a>
+              </li>
+              <li>
+                <a href="#contact" data-translate="nav.contact">Liên hệ</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header-controls">
+            <div class="language-selector">
+              <button class="lang-btn" id="langBtn">
+                <i class="fas fa-globe"></i>
+                <span id="currentLang">VI</span>
+                <i class="fas fa-chevron-down"></i>
+              </button>
+              <div class="lang-dropdown" id="langDropdown">
+                <div class="lang-option" data-lang="vi">
+                  <img src="https://flagcdn.com/w20/vn.png" alt="Vietnamese" />
+                  <span>Tiếng Việt</span>
+                </div>
+                <div class="lang-option" data-lang="en">
+                  <img src="https://flagcdn.com/w20/us.png" alt="English" />
+                  <span>English</span>
+                </div>
+                <div class="lang-option" data-lang="ja">
+                  <img src="https://flagcdn.com/w20/jp.png" alt="Japanese" />
+                  <span>日本語</span>
+                </div>
+                <div class="lang-option" data-lang="ko">
+                  <img src="https://flagcdn.com/w20/kr.png" alt="Korean" />
+                  <span>한국어</span>
+                </div>
+                <div class="lang-option" data-lang="zh">
+                  <img src="https://flagcdn.com/w20/cn.png" alt="Chinese" />
+                  <span>中文</span>
+                </div>
+                <div class="lang-option" data-lang="fr">
+                  <img src="https://flagcdn.com/w20/fr.png" alt="French" />
+                  <span>Français</span>
+                </div>
+                <div class="lang-option" data-lang="de">
+                  <img src="https://flagcdn.com/w20/de.png" alt="German" />
+                  <span>Deutsch</span>
+                </div>
+                <div class="lang-option" data-lang="es">
+                  <img src="https://flagcdn.com/w20/es.png" alt="Spanish" />
+                  <span>Español</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-background">
+        <div class="floating-shapes">
+          <div class="shape shape-1"></div>
+          <div class="shape shape-2"></div>
+          <div class="shape shape-3"></div>
+          <div class="shape shape-4"></div>
+          <div class="shape shape-5"></div>
+        </div>
+        <div class="gradient-orb"></div>
+      </div>
+
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <p class="hero-greeting" data-translate="hero.greeting">
+              Xin chào, tôi là
+            </p>
+            <h1 class="hero-name">Nguyễn Tiến Hoàng Long</h1>
+            <h2 class="hero-title" data-translate="hero.title">
+              Lập trình viên Full-Stack
+            </h2>
+            <p class="hero-subtitle" data-translate="hero.subtitle">
+              Chuyên gia phát triển ứng dụng web hiện đại với HTML, Krpano và
+              các công nghệ tiên tiến
+            </p>
+
+            <div class="hero-buttons">
+              <a
+                href="#projects"
+                class="btn btn-primary"
+                data-translate="hero.cta"
+                >Xem dự án</a
+              >
+              <div class="button-container-mask">
+                <span class="mas" data-translate="hero.contact"
+                  >Liên hệ ngay</span
+                >
+                <a href="#contact" type="button" data-translate="hero.contact"
+                  >Liên hệ ngay</a
+                >
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a href="https://github.com/NathanielLeo" class="social-link">
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/ho%C3%A0ng-long-aba067252/"
+                class="social-link"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="mailto:longh2867@gmail.com" class="social-link">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="code-window">
+              <div class="window-header">
+                <div class="window-controls">
+                  <span class="control red"></span>
+                  <span class="control yellow"></span>
+                  <span class="control green"></span>
+                </div>
+              </div>
+              <div class="code-content">
+                <div class="code-line">
+                  <span class="keyword">const</span>
+                  <span class="variable">developer</span>
+                  <span class="operator">=</span>
+                  <span class="bracket">{</span>
+                </div>
+                <div class="code-line indent">
+                  <span class="property">name:</span>
+                  <span class="string">'Nguyễn Tiến Hoàng Long'</span>,
+                </div>
+                <div class="code-line indent">
+                  <span class="property">skills:</span>
+                  <span class="bracket">[</span
+                  ><span class="string">'Html'</span>,
+                  <span class="string">'Krpano'</span
+                  ><span class="bracket">]</span>,
+                </div>
+                <div class="code-line indent">
+                  <span class="property">passion:</span>
+                  <span class="string">'Building amazing apps'</span>
+                </div>
+                <div class="code-line">
+                  <span class="bracket">}</span>
+                </div>
+                <span class="cursor"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="section-title" data-translate="about.title">Về tôi</h2>
+
+        <div class="about-content">
+          <div class="about-text">
+            <p data-translate="about.description">
+              Tôi là một lập trình viên đam mê với hơn 3 năm kinh nghiệm trong
+              phát triển ứng dụng web. Chuyên môn về JavaScript, React, Node.js
+              và các công nghệ cloud hiện đại.
+            </p>
+
+            <div class="stats">
+              <div class="stat-item">
+                <div class="stat-icon">
+                  <i class="fas fa-code"></i>
+                </div>
+                <div class="stat-number">3+</div>
+                <div class="stat-label" data-translate="about.experience">
+                  Ba kinh nghiệm
+                </div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-icon">
+                  <i class="fas fa-project-diagram"></i>
+                </div>
+                <div class="stat-number">50+</div>
+                <div class="stat-label" data-translate="about.projects">
+                  Dự án hoàn thành
+                </div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-icon">
+                  <i class="fas fa-users"></i>
+                </div>
+                <div class="stat-number">30+</div>
+                <div class="stat-label" data-translate="about.clients">
+                  Khách hàng hài lòng
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+      <div class="container">
+        <h2 class="section-title" data-translate="skills.title">
+          Kỹ năng chuyên môn
+        </h2>
+
+        <div class="skills-grid">
+          <div class="skill-category">
+            <div class="skill-header frontend">
+              <h3 data-translate="skills.frontend">Frontend Development</h3>
+            </div>
+            <div class="skill-list">
+              <div class="skill-item">React</div>
+              <div class="skill-item">Next.js</div>
+              <div class="skill-item">TypeScript</div>
+              <div class="skill-item">Tailwind CSS</div>
+              <div class="skill-item">Vue.js</div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-header backend">
+              <h3 data-translate="skills.backend">Backend Development</h3>
+            </div>
+            <div class="skill-list">
+              <div class="skill-item">Node.js</div>
+              <div class="skill-item">Express</div>
+              <div class="skill-item">Python</div>
+              <div class="skill-item">PostgreSQL</div>
+              <div class="skill-item">MongoDB</div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-header database">
+              <h3 data-translate="skills.database">Cơ sở dữ liệu</h3>
+            </div>
+            <div class="skill-list">
+              <div class="skill-item">PostgreSQL</div>
+              <div class="skill-item">MongoDB</div>
+              <div class="skill-item">Redis</div>
+              <div class="skill-item">MySQL</div>
+              <div class="skill-item">Firebase</div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-header tools">
+              <h3 data-translate="skills.tools">Công cụ & DevOps</h3>
+            </div>
+            <div class="skill-list">
+              <div class="skill-item">Docker</div>
+              <div class="skill-item">AWS</div>
+              <div class="skill-item">Git</div>
+              <div class="skill-item">Vercel</div>
+              <div class="skill-item">Linux</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+      <div class="container">
+        <h2 class="section-title" data-translate="projects.title">
+          Dự án nổi bật
+        </h2>
+
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="https://thanhnien.mediacdn.vn/Uploaded/quochungqc/2022_09_07/essensia-2-9415.jpg"
+                alt="E-Commerce Platform"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="#" class="project-link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>E-Commerce Platform</h3>
+              <p>Experience solution with frontend and krpano integration</p>
+              <div class="project-tech">
+                <span class="tech-tag">Figma</span>
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Krpano</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="https://duantheprive.vn/wp-content/uploads/2025/04/Phoi-canh-song-nuoc-ben-the-prive-1400x747.jpg"
+                alt="Task Management App"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="#" class="project-link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Task Management App</h3>
+              <p>Collaborative task management tool with real-time updates</p>
+              <div class="project-tech">
+                <span class="tech-tag">Figma</span>
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Krpano</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="https://waterpoint.land/wp-content/uploads/2024/05/Du-an-Waterpoint-Nam-Long-tai-Ben-Luc-Long-An-duoc-om-tron-boi-dong-song-Vam-Co-Dong-tho-mong.jpg"
+                alt="AI Chat Application"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="#" class="project-link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>AI Chat Application</h3>
+              <p>
+                AI-powered chat application with natural language processing
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Figma</span>
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Krpano</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact-header">
+          <h2 class="section-title" data-translate="contact.title">
+            Liên hệ với tôi
+          </h2>
+          <p class="section-subtitle" data-translate="contact.subtitle">
+            Sẵn sàng cho dự án tiếp theo? Hãy liên hệ ngay!
+          </p>
+        </div>
+
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Email</h4>
+                <a href="mailto:alex.nguyen@example.com">longh2867@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Phone</h4>
+                <a href="tel:+84123456789">+84 394 459 156</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Location</h4>
+                <span>Thu Duc , Ho Chi Minh City, Vietnam</span>
+              </div>
+            </div>
+
+            <div class="contact-cta">
+              <h3 data-translate="contact.cta.title">Let's work together!</h3>
+              <p data-translate="contact.cta.description">
+                I'm always interested in new opportunities and exciting
+                projects. Whether you have a question or just want to say hi,
+                I'll try my best to get back to you!
+              </p>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <input type="text" id="name" name="name" required />
+                <label for="name" data-translate="contact.name"
+                  >Họ và tên</label
+                >
+              </div>
+              <div class="form-group">
+                <input type="email" id="email" name="email" required />
+                <label for="email" data-translate="contact.email">Email</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <input type="text" id="subject" name="subject" required />
+              <label for="subject" data-translate="contact.subject"
+                >Chủ đề</label
+              >
+            </div>
+
+            <div class="form-group">
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+              <label for="message" data-translate="contact.message"
+                >Tin nhắn</label
+              >
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">
+              <span data-translate="contact.send">Gửi tin nhắn</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+
+            <div class="form-success" id="formSuccess">
+              <i class="fas fa-check-circle"></i>
+              <span data-translate="contact.success"
+                >Tin nhắn đã được gửi thành công!</span
+              >
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <div class="logo">
+              <span>&lt;Dev / Nathaniel Leo&gt;</span>
+            </div>
+            <p>Building the future, one line of code at a time.</p>
+          </div>
+
+          <div class="footer-social">
+            <a href="https://github.com" class="social-link">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com" class="social-link">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:alex@example.com" class="social-link">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            © 2025 Nguyen Tien Hoang Long.
+            <span data-translate="footer.rights">Bản quyền thuộc về</span>
+            <i class="fas fa-heart"></i> Nathaniel Leo
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+    <script src="./contact/contact-form.js"></script>
+  </body>
+</html>
